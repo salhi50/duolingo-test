@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  color: #161c20;
+  overflow-y: auto;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.shadow {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+:root {
+  --main-transition: 0.2s;
+  --dark-blue-color: #0875d5;
+  --bg-footer-black: #161c20;
+  --bg-facebook: #3b5998;
+  --border-input: #ced4da;
+  --gradient-overlay: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  --relax-green: #29c187;
+  --shadow-btn: 0 6px 25px -25px #000;
+  --own-bleu: #235390;
+  --own-green: #58cc02;
+
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+.scroll-top{
+  height: 50px;
+  cursor: pointer;
+  width: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+}
+/* content */
+
+/* header:start */
+
+header{
+  background: var(--own-bleu);
+  height: 55px;
+}
+header ul{
+  height: 55px;
+}
+header button{
+  border-radius: 16px;
+  padding: .6rem 18px !important;
+  font-weight: 500 !important;
+}
+header button:last-child{
+  color: var(--own-bleu);
+}
+header button:first-child{
+  background-color: var(--own-green);
+}
+header .logo{
+  width: 156px;
+  height: 36px;
+}
+@media (max-width: 768px) {
+  header .btns{
+    display: none;
+  }
+}
+/* header:end */
+
+
+/* section:start */
+
+.section{
+  background: var(--own-bleu);
+}
+.own-1 h3,.own-2 h3{
+  color: #454444;
+}
+@media (min-width: 768px) {
+  .section img{
+    margin-left: -50px;
+  }
+  .section button:first-child{
+    width: 239px;
+  }
+}
+.section button:first-child{
+  background: var(--own-green);
+  border-radius: .5rem;
+  height: 42px;
+  font-weight: 600 !important;
+}
+.section button:last-child{
+  background: #fff;
+  height: 42px;
+  color: #235390;
+  border-radius: .5rem;
+  font-weight: 600 !important;
+}
+.section button{
+  width: max-content;
+}
+.section{
+  background: var(--own-bleu);
+}
+
+/* section:end */
+
+
+/* own-1:start */
+
+.own-1 p{
+  color: #7a7a7a;
+  font-weight: 400 !important;
+}
+.own-1 .list-ctrl{
+  border-bottom: 1px solid var(--border-input);
+}
+
+
+/* own-1:end */
+
+
+/* own-2:start */
+
+.own-2 .list-ctrl{
+  border-bottom: 1px solid var(--border-input); 
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .own-2 .list-ctrl{
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+  .own-2 .objet{
+    align-items: center;
+  }
+  .own-2 .objet img{
+    margin: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .own-2 .list-ctrl{
+    margin-top: 2rem;
+  }  
+}
+/* own-2:end */
+
+
+/* own-3:start */
+
+.own-3{
+  padding: 30px 0;
+}
+.own-3 .list-ctrl{
+  border-bottom: 1px solid var(--border-input);
+}
+.list-ctrl p.p-small{
+  color: #7a7a7a;
+}
+.list-ctrl p.p-xsmall{
+  color: #7a7a7a;
+}
+.own-4 a.btn{
+  background: none;
+  border-radius: 6px;
+  border: 2px solid var(--border-input);
+  height: 40px;
+}
+.own-4 a.btn:hover{
+  background: #f7f7f7;
+}
+.own-4 .list-ctrl{
+  border-bottom: 1px solid var(--border-input);
+}
+.own-5 .list-ctrl,
+.own-6 .list-ctrl{
+  border-bottom: 1px solid var(--border-input);
+}
+.bottom{
+  background: #1cb0f6;
+  padding: 5px 0;
+  position: sticky;
+  bottom: 0;
+  display: none;
+}
+@media (max-width: 768px) {
+  .bottom{
+    display: block;
+  }
+}
+/* own-3:end */
+
+
+/* footer:start */
+
+footer{
+  padding: 30px;
+  background: var(--own-bleu);
+  color: white;
+}
+footer i{
+  font-size: 25px;
+}
+footer .follow{
+  border-bottom: 1px solid #336ebd;
+}
+footer span{
+  font-size: 12px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin-left: 5px;
+  color: #cfcfcf;
+  text-transform: capitalize;
+}
+/* footer:end */
+  
